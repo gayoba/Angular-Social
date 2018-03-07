@@ -19,7 +19,7 @@ interface NewNote {
 export class NoteService {
 
   notesCollection: AngularFirestoreCollection<Note>;
-  noteDocument:   AngularFirestoreDocument<Node>;
+  //noteDocument:   AngularFirestoreDocument<Node>;
 
   constructor(private afs: AngularFirestore) {
     this.notesCollection = this.afs.collection('notes', (ref) => ref.orderBy('time', 'desc').limit(5));

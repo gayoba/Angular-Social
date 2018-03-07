@@ -16,6 +16,11 @@ export class NoteDetailComponent {
 
   constructor(private noteService: NoteService) { }
 
+  updateTimeStamp() {
+    const date = new Date().getTime();
+    this.noteService.updateNote(this.note.$key, { timeStamp: date });
+  }
+
   addHeartToNote(val: number) {
     if (this.note.id) {
       this.noteService.updateNote(this.note.id, { like: val + 1 });
