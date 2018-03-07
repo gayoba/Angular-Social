@@ -16,10 +16,6 @@ export class NoteDetailComponent {
 
   constructor(private noteService: NoteService) { }
 
-  updateTimeStamp() {
-    const date = new Date().getTime();
-    this.noteService.updateNote(this.note.$key, { timeStamp: date });
-  }
 
   addHeartToNote(val: number) {
     if (this.note.id) {
@@ -36,6 +32,10 @@ export class NoteDetailComponent {
       console.error('Note missing ID!');
     }
   }
+
+  
+
+
 
   deleteNote(id: string) {
     this.noteService.deleteNote(id);
