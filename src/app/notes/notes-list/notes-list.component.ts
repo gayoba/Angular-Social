@@ -15,15 +15,17 @@ export class NotesListComponent implements OnInit {
 
   notes: Observable<Note[]>;
   content: string;
+ 
 
   constructor(private noteService: NoteService) { }
 
   ngOnInit() {
-    // this.notes = this.noteService.getData()
+    
     this.notes = this.noteService.getSnapshot();
   }
 
   createNote() {
+    
     this.noteService.create(this.content);
     this.content = '';
   }

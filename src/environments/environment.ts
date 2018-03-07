@@ -1,11 +1,11 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-        apiKey: 'APIKEY',
-        authDomain: 'DEV-APP.firebaseapp.com',
+        apiKey: 'AIzaSyBf562OQpawlCGF5m9vjZ1GZOWEdbdhvoI',
+        authDomain: 'AngularSocial.firebaseapp.com',
         databaseURL: 'https://DEV-APP.firebaseio.com',
-        projectId: 'DEV-APP',
-        storageBucket: 'DEV-APP.appspot.com',
-        messagingSenderId: '123456789'
+        projectId: 'angularsocial-3dd1e',
+        storageBucket: 'AngularSocial.appspot.com',
+        messagingSenderId: '801650646520'
     }
 };
